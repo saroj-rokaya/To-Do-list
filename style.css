@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: linear-gradient(30deg,rgb(189, 3, 149),rgb(3, 182, 214));
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.back{
+    background: linear-gradient(30deg,rgb(3, 18, 180),rgb(3, 134, 30));
+
+    position: absolute;
+    width: 100%;
+    min-height: 20%;
+    max-width: 320px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+.back #paragraph{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    margin-right: 1px;
+}
+#paragraph::after{
+    content: ' ';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    background-image: url(icon.png);
+}
+.inner{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(30deg,rgb(243, 4, 211),rgb(4, 197, 250));
+
+    height: 3em;
+    width: 18em;
+    border-radius: 30px;
+}
+.input #input{
+    height: 3em;
+    width: 16em;
+    border-radius: 30px;
+    background-color: transparent;
+    border: none;
+    margin-left: 7px;
+    outline: none;
+}
+.input #input::placeholder{
+    font-size: 15px;
+    height: 20px;
+    color: #00d0ff;
+}
+.input button{
+    height: 3.2em;
+    width: 6em;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(30deg,rgb(253, 253, 5),rgb(252, 3, 3));
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+} 
+ul li{
+    list-style: none;
+    font-size: 15px;
+     margin: 8px 0px 12px 30px;
+     position: relative;
+     cursor: pointer;
+     
+}
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -24px;
+    
+}
+.lists .check{
+    text-decoration: line-through;
+}
+/* .lists .check::before{
+    background-image: url(checked.png);
+} */
+
+.list span{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.list span:hover{
+    background-color: #950b0b;
+}
